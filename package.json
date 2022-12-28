@@ -1,27 +1,39 @@
 {
-  "name": "node-js-playground-template",
-  "version": "0.0.0",
+  "name": "node-js-app-template",
+  "version": "1.0.0",
   "type": "module",
-  "description": "Template for production ready node js playground",
+  "description": "Template for production ready node js app",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/timelessco/node-js-playground-template.git"
+    "url": "git+https://github.com/timelessco/node-js-app-template.git"
   },
-  "homepage": "https://github.com/timelessco/node-js-playground-template#readme",
+  "homepage": "https://github.com/timelessco/node-js-app-template#readme",
   "bugs": {
-    "url": "https://github.com/timelessco/node-js-playground-template/issues"
+    "url": "https://github.com/timelessco/node-js-app-template/issues"
   },
   "author": "Timeless <hello@timeless.co> (https://timeless.co/)",
   "license": "MIT",
   "private": true,
+  "main": "./lib/node-js-app-template.cjs",
+  "module": "./lib/node-js-app-template.js",
+  "exports": {
+    ".": {
+      "import": "./lib/node-js-app-template.js",
+      "require": "./lib/node-js-app-template.cjs"
+    }
+  },
+  "files": [
+    "lib"
+  ],
   "keywords": [
     "js",
-    "playground",
+    "app",
     "production",
     "template",
     "node"
   ],
   "scripts": {
+    "build": "tsup",
     "check": "pnpm lint:check && pnpm format:check",
     "commit": "gacp",
     "dev": "NODE_OPTIONS=\"--experimental-specifier-resolution=node\" nodemon src/index.js",
@@ -58,7 +70,8 @@
     "prettier": "^2.8.1",
     "prettier-plugin-pkg": "^0.17.1",
     "release-it": "^15.5.1",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "tsup": "^6.5.0"
   },
   "sideEffects": false,
   "browserslist": {

@@ -1,8 +1,8 @@
 # Introduction
 
-This project is a frontend playground template built using nodemon. nodemon is a
-watch tool for modern node applications, designed for performance and ease of
-use. It allows you to focus on writing code and not on the watch process.
+This project is a frontend app package built using tsup. tsup is a modern build
+tool for modern node applications, designed for performance and ease of use. It
+allows you to focus on writing code and not on the build process.
 
 ## Setup
 
@@ -11,7 +11,7 @@ To get started with this project, follow these steps:
 1. Clone the repository:
 
 ```
-git clone https://github.com/timelessco/node-js-playground-template
+git clone https://github.com/timelessco/node-js-app-template
 ```
 
 2. Install the dependencies:
@@ -28,6 +28,16 @@ pnpm run dev
 
 This will start a nodemon watch server, and you can view the changes in your
 cli. Any changes you make to the code will be automatically reloaded in the cli.
+
+## Build
+
+To build the project for production, run the following command:
+
+```
+pnpm run build
+```
+
+This will generate a production-ready build app in the `lib` folder.
 
 ## Other Commands
 
