@@ -1,7 +1,7 @@
 # Introduction
 
-This project is a frontend app package built using tsup. tsup is a modern build
-tool for modern node applications, designed for performance and ease of use. It
+This project is a node app package built using tsup. tsup is a modern build tool
+for modern node applications, designed for performance and ease of use. It
 allows you to focus on writing code and not on the build process.
 
 ## Setup
