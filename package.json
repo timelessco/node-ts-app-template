@@ -70,7 +70,7 @@
     "prettier": "^2.8.1",
     "prettier-plugin-pkg": "^0.17.1",
     "release-it": "^15.5.1",
-    "rimraf": "^3.0.2",
+    "rimraf": "^4.4.0",
     "tsup": "^6.5.0"
   },
   "sideEffects": false,
