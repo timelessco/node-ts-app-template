@@ -16,12 +16,12 @@ specifiers:
   gacp: ^3.0.3
   husky: ^8.0.3
   lint-staged: ^13.2.0
-  nodemon: ^2.0.21
+  nodemon: ^2.0.22
   pinst: ^3.0.0
   prettier: ^2.8.6
   prettier-plugin-pkg: ^0.17.1
   release-it: ^15.9.1
-  rimraf: ^4.4.0
+  rimraf: ^4.4.1
   tsup: ^6.7.0
 
 devDependencies:
@@ -40,12 +40,12 @@ devDependencies:
   gacp: 3.0.3
   husky: 8.0.3
   lint-staged: 13.2.0
-  nodemon: 2.0.21
+  nodemon: 2.0.22
   pinst: 3.0.0
   prettier: 2.8.6
   prettier-plugin-pkg: 0.17.1_prettier@2.8.6
   release-it: 15.9.1
-  rimraf: 4.4.0
+  rimraf: 4.4.1
   tsup: 6.7.0_z6wznmtyb6ovnulj6iujpct7um
 
 packages:
@@ -5247,8 +5247,8 @@ packages:
     resolution: {integrity: sha512-dFSmB8fFHEH/s81Xi+Y/15DQY6VHW81nXRj86EMSL3lmuTmK1e+aT4wrFCkTbm+gSwkw4KpX+rT/pMM2c1mF+A==}
     dev: true
 
-  /nodemon/2.0.21:
-    resolution: {integrity: sha512-djN/n2549DUtY33S7o1djRCd7dEm0kBnj9c7S9XVXqRUbuggN1MZH/Nqa+5RFQr63Fbefq37nFXAE9VU86yL1A==}
+  /nodemon/2.0.22:
+    resolution: {integrity: sha512-B8YqaKMmyuCO7BowF1Z1/mkPqLk6cs/l63Ojtd6otKjMx47Dq1utxfRxcavH1I7VSaL8n5BUaoutadnsX3AAVQ==}
     engines: {node: '>=8.10.0'}
     hasBin: true
     dependencies:
@@ -6171,8 +6171,8 @@ packages:
       glob: 7.2.3
     dev: true
 
-  /rimraf/4.4.0:
-    resolution: {integrity: sha512-X36S+qpCUR0HjXlkDe4NAOhS//aHH0Z+h8Ckf2auGJk3PTnx5rLmrHkwNdbVQuCSUhOyFrlRvFEllZOYE+yZGQ==}
+  /rimraf/4.4.1:
+    resolution: {integrity: sha512-Gk8NlF062+T9CqNGn6h4tls3k6T1+/nXdOcSZVikNVtlRdYpA7wRJJMoXmuvOnLW844rPjdQ7JgXCYM6PPC/og==}
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
