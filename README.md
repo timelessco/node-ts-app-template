@@ -1,61 +1,77 @@
-# Introduction
+<h1 align="center">Node TS App</h1>
 
-This project is a node app package built using tsup. tsup is a modern build tool
-for modern node applications, designed for performance and ease of use. It
-allows you to focus on writing code and not on the build process.
+<p align="center">Node TS App Template</p>
 
-## Setup
+<p align="center">
+	<a href="#contributors" target="_blank">
+<!-- prettier-ignore-start -->
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+<img alt="All Contributors: 2" src="https://img.shields.io/badge/all_contributors-2-21bb42.svg" />
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+<!-- prettier-ignore-end -->
+	</a>
+	<a href="https://github.com/timelessco/node-ts-app/blob/main/.github/CODE_OF_CONDUCT.md" target="_blank">
+		<img alt="Contributor Covenant" src="https://img.shields.io/badge/code_of_conduct-enforced-21bb42" />
+	</a>
+	<a href="https://github.com/timelessco/node-ts-app/blob/main/LICENSE.md" target="_blank">
+		<img alt="License: MIT" src="https://img.shields.io/github/license/timelessco/node-ts-app?color=21bb42">
+	</a>
+	<img alt="Style: Prettier" src="https://img.shields.io/badge/style-prettier-21bb42.svg" />
+	<img alt="TypeScript: Strict" src="https://img.shields.io/badge/typescript-strict-21bb42.svg" />
+</p>
 
-To get started with this project, follow these steps:
+## Introduction
 
-1. Clone the repository:
+Built using the [Node.js](https://nodejs.org/en) and written in TypeScript &
+other amazing technologies mentioned below to build a modern web application.
 
-```
-git clone https://github.com/timelessco/node-js-app-template
-```
+- [typeScript](https://www.typescriptlang.org/)
+- [ts-node](https://github.com/TypeStrong/ts-node)
+- [zod](https://github.com/colinhacks/zod)
+- [dotenv-cli](https://github.com/entropitor/dotenv-cli)
+- [consola](https://github.com/unjs/consola)
+- [pnpm](https://pnpm.io/)
+- [eslint](https://eslint.org/)
+- [prettier](https://prettier.io/)
+- [markdownlint](https://github.com/DavidAnson/markdownlint)
+- [knip](https://github.com/webpro/knip)
+- [cspell](https://cspell.org)
+- [npm-package-json-lint](https://npmpackagejsonlint.org/)
+- [release-it](https://github.com/release-it/release-it#readme)
+- [husky](https://typicode.github.io/husky/#/)
+- [lint-staged](https://github.com/okonet/lint-staged#readme)
+- [commitlint](https://commitlint.js.org/#/)
+- [gacp](https://github.com/vivaxy/gacp#readme)
+- [all-contributors](https://github.com/all-contributors/all-contributors)
 
-2. Install the dependencies:
+## Development
 
-```
-pnpm install
-```
+See [`.github/CONTRIBUTING.md`](./.github/CONTRIBUTING.md), then
+[`.github/DEVELOPMENT.md`](./.github/DEVELOPMENT.md). Thanks! 💖
 
-3. Start the development server:
+## Contributors
 
-```
-pnpm run dev
-```
+<!-- spellchecker: disable -->
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://navinmoorthy.me/"><img src="https://avatars.githubusercontent.com/u/39694575?v=4?s=100" width="100px;" alt="Navin Moorthy"/><br /><sub><b>Navin Moorthy</b></sub></a><br /><a href="https://github.com/timelessco/node-ts-app/commits?author=navin-moorthy" title="Code">💻</a> <a href="#a11y-navin-moorthy" title="Accessibility">️️️️♿️</a> <a href="https://github.com/timelessco/node-ts-app/commits?author=navin-moorthy" title="Documentation">📖</a> <a href="#design-navin-moorthy" title="Design">🎨</a> <a href="#ideas-navin-moorthy" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-navin-moorthy" title="Maintenance">🚧</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://www.joshuakgoldberg.com"><img src="https://avatars.githubusercontent.com/u/3335181?v=4?s=100" width="100px;" alt="Josh Goldberg"/><br /><sub><b>Josh Goldberg</b></sub></a><br /><a href="#tool-JoshuaKGoldberg" title="Tools">🔧</a></td>
+    </tr>
+  </tbody>
+</table>
 
-This will start a nodemon watch server, and you can view the changes in your
-cli. Any changes you make to the code will be automatically reloaded in the cli.
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
 
-## Build
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+<!-- spellchecker: enable -->
 
-To build the project for production, run the following command:
+<!-- You can remove this notice if you don't want it 🙂 no worries! -->
 
-```
-pnpm run build
-```
-
-This will generate a production-ready build app in the `lib` folder.
-
-## Other Commands
-
-In addition to the dev and build commands, there may be other commands
-available, such as:
-
-`check`: Run the linters & formatters to check the code for style and syntax
-errors.
-
-`fix`: Run the linters & formatters to check the code for style and syntax
-errors. If any errors are found, they will be fixed automatically.
-
-`test`: Run the test suite for the project.
-
-`commit`: Run the commit wizard to generate a commit message.
-
-`release`: Run the `release-it` tool to generate a new release.
-
-## License
-
-This project is licensed under the [MIT License](./LICENSE).
+> 💙 This package is based on
+> [@JoshuaKGoldberg](https://github.com/JoshuaKGoldberg)'s
+> [template-typescript-node-package](https://github.com/JoshuaKGoldberg/template-typescript-node-package).

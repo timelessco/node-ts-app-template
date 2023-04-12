@@ -1,109 +1,128 @@
 {
-  "name": "node-js-app-template",
-  "version": "1.0.0",
-  "type": "module",
-  "description": "Template for production ready node js app",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/timelessco/node-js-app-template.git"
-  },
-  "homepage": "https://github.com/timelessco/node-js-app-template#readme",
-  "bugs": {
-    "url": "https://github.com/timelessco/node-js-app-template/issues"
-  },
-  "author": "Timeless <hello@timeless.co> (https://timeless.co/)",
-  "license": "MIT",
-  "private": true,
-  "main": "./lib/node-js-app-template.cjs",
-  "module": "./lib/node-js-app-template.js",
-  "exports": {
-    ".": {
-      "import": "./lib/node-js-app-template.js",
-      "require": "./lib/node-js-app-template.cjs"
-    }
-  },
-  "files": [
-    "lib"
-  ],
-  "keywords": [
-    "js",
-    "app",
-    "production",
-    "template",
-    "node"
-  ],
-  "scripts": {
-    "build": "tsup",
-    "check": "pnpm lint:check && pnpm format:check",
-    "commit": "gacp",
-    "dev": "NODE_OPTIONS=\"--experimental-specifier-resolution=node\" nodemon src/index.js",
-    "fix": "pnpm lint:fix && pnpm format:fix",
-    "format:check": "prettier -l --cache \"./**/*.{html,css,js,cjs,jsx,ts,cts,tsx,md,json}\"",
-    "format:fix": "prettier --write --cache --check \"./**/*.{html,css,js,cjs,jsx,ts,cts,tsx,md,json}\"",
-    "lint:check": "eslint --cache --color --ext .js,.cjs,.jsx,.ts,.cts,.tsx .",
-    "lint:fix": "eslint --cache --color --ext .js,.cjs,.jsx,.ts,.cts,.tsx . --fix",
-    "postinstall": "husky install",
-    "postpublish": "pinst --enable",
-    "prepublishOnly": "pinst --disable",
-    "release": "release-it",
-    "release:check": "release-it --dry-run",
-    "test": "echo \"no test specified\" && exit 0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.21.4",
-    "@babel/eslint-parser": "^7.21.3",
-    "@babel/preset-env": "^7.21.4",
-    "@commitlint/cli": "^17.5.1",
-    "@commitlint/config-conventional": "^17.4.4",
-    "@ianvs/prettier-plugin-sort-imports": "^3.7.2",
-    "@release-it/conventional-changelog": "^5.1.1",
-    "eslint": "^8.38.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-prettier": "^4.2.1",
-    "gacp": "^3.0.3",
-    "husky": "^8.0.3",
-    "lint-staged": "^13.2.1",
-    "nodemon": "^2.0.22",
-    "pinst": "^3.0.0",
-    "prettier": "^2.8.7",
-    "prettier-plugin-pkg": "^0.17.1",
-    "release-it": "^15.10.1",
-    "rimraf": "^5.0.0",
-    "tsup": "^6.7.0"
-  },
-  "sideEffects": false,
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "last 2 versions",
-      "Firefox ESR",
-      "not dead"
-    ],
-    "development": [
-      "last 2 versions",
-      "not dead"
-    ]
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
-  "gacp": {
-    "add": false,
-    "push": false,
-    "emoji": "emoji",
-    "editor": false
-  },
-  "lint-staged": {
-    "**/*.{js,cjs,jsx,ts,cts,tsx}": [
-      "pnpm lint:fix"
-    ],
-    "**/*.{html,css,js,cjs,jsx,ts,cts,tsx,md,json}": [
-      "pnpm format:fix"
-    ]
-  },
-  "source": "./src/index.js"
+	"name": "node-ts-app",
+	"version": "1.0.0",
+	"private": true,
+	"description": "Node TS App Template",
+	"keywords": [
+		"ts",
+		"library",
+		"production",
+		"template",
+		"node"
+	],
+	"bugs": {
+		"url": "https://github.com/timelessco/node-ts-app/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/timelessco/node-ts-app.git"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Timeless",
+		"email": "hello@timeless.co",
+		"url": "https://timeless.co/"
+	},
+	"type": "module",
+	"scripts": {
+		"build": "npx turbo run build:node",
+		"build:node": "dotenv -e .env.production ts-node src/index.ts",
+		"commit": "gacp",
+		"contributors:add": "all-contributors add",
+		"contributors:generate": "all-contributors generate",
+		"dev": "dotenv -e .env.development nodemon src/index.ts",
+		"format": "npx turbo run format:eslint format:md format:prettier",
+		"format:eslint": "eslint --cache --report-unused-disable-directives --color . --fix",
+		"format:md": "markdownlint --fix **/*.md \".github/**/*.md\"",
+		"format:prettier": "prettier --write --cache --cache-location=.prettiercache --list-different --ignore-unknown .",
+		"lint": "npx turbo run lint:eslint lint:types lint:md lint:knip lint:package-json lint:spelling lint:prettier",
+		"lint:eslint": "eslint --cache --report-unused-disable-directives --color .",
+		"lint:knip": "knip --production",
+		"lint:md": "markdownlint **/*.md \".github/**/*.md\"",
+		"lint:package-json": "npmPkgJsonLint .",
+		"lint:prettier": "prettier --check --cache --cache-location=.prettiercache --ignore-unknown .",
+		"lint:spelling": "cspell --dot --gitignore --cache --no-progress check \"**/*\"",
+		"lint:types": "tsc --noEmit",
+		"populate:dictionary": "del-cli project-words.txt && cspell --words-only --unique --gitignore --cache --dot \"**/*\" | sort --ignore-case >> project-words.txt",
+		"prepare": "husky install",
+		"release": "dotenv -e .env.releaseit node release-it/getCommitsSinceLastRelease.js && release-it --ci",
+		"release:dryrun": "release-it --dry-run",
+		"test": "echo \"no test specified\" && exit 0"
+	},
+	"commitlint": {
+		"extends": [
+			"@commitlint/config-conventional"
+		]
+	},
+	"lint-staged": {
+		"*": [
+			"pnpm format:prettier",
+			"pnpm lint:spelling"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"dependencies": {
+		"consola": "^3.0.1",
+		"zod": "^3.21.4"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "17.5.1",
+		"@commitlint/config-conventional": "17.4.4",
+		"@ianvs/prettier-plugin-sort-imports": "3.7.2",
+		"@octokit/core": "4.2.0",
+		"@release-it/conventional-changelog": "5.1.1",
+		"@types/node": "18.15.11",
+		"@typescript-eslint/experimental-utils": "5.58.0",
+		"all-contributors-cli": "6.24.0",
+		"cspell": "6.31.1",
+		"dedent": "0.7.0",
+		"del-cli": "5.0.0",
+		"dotenv-cli": "^7.2.1",
+		"eslint": "8.38.0",
+		"eslint-config-canonical": "41.0.1",
+		"eslint-config-prettier": "8.8.0",
+		"eslint-plugin-jsonc": "2.7.0",
+		"eslint-plugin-toml": "0.4.0",
+		"eslint-plugin-yml": "1.5.0",
+		"execa": "7.1.1",
+		"gacp": "3.0.3",
+		"git-remote-origin-url": "4.0.0",
+		"git-url-parse": "13.1.0",
+		"husky": "8.0.3",
+		"jsonc-eslint-parser": "2.2.0",
+		"knip": "2.8.2",
+		"lint-staged": "13.2.1",
+		"markdownlint": "0.28.1",
+		"markdownlint-cli": "0.33.0",
+		"nodemon": "^2.0.22",
+		"npm-package-json-lint": "6.4.0",
+		"npm-package-json-lint-config-default": "5.0.0",
+		"prettier": "2.8.7",
+		"prettier-plugin-packagejson": "2.4.3",
+		"release-it": "15.10.1",
+		"title-case": "3.0.3",
+		"toml-eslint-parser": "0.5.0",
+		"ts-node": "^10.9.1",
+		"turbo": "1.8.8",
+		"typescript": "5.0.4",
+		"yaml-eslint-parser": "1.2.0"
+	},
+	"packageManager": "pnpm@8.2.0",
+	"gacp": {
+		"add": false,
+		"push": false,
+		"emoji": "emoji",
+		"editor": false
+	}
 }
