@@ -5,7 +5,8 @@
 	"files.associations": {
 		"*.svg": "html",
 		".env.*": "dotenv",
-		"*.json": "jsonc"
+		"*.json": "jsonc",
+		".*ignore": "ignore"
 	},
 
 	// Recommended Extensions
@@ -80,6 +81,16 @@
 			"strings": "on",
 			"other": "on"
 		}
+	},
+
+	// Docker
+	"[dockerfile]": {
+		"editor.defaultFormatter": "ms-azuretools.vscode-docker"
+	},
+
+	// Nginx
+	"[nginx]": {
+		"editor.defaultFormatter": "raynigon.nginx-formatter"
 	},
 
 	// Other Installed Extensions
