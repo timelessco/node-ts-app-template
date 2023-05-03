@@ -1,6 +1,6 @@
 name: Git Config
 
-description: Configrue the git user
+description: Configure the git user
 
 runs:
   using: composite
