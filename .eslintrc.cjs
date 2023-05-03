@@ -1,9 +1,12 @@
 const commonIgnoredRules = {
 	"no-console": ["error", { allow: ["warn", "error"] }],
+	"no-param-reassign": "off",
 	"arrow-body-style": ["error", "as-needed"],
 	"import/no-named-as-default": "off",
 	"import/no-unassigned-import": ["error", { allow: ["**/*.css"] }],
-	"import/no-extraneous-dependencies": ["off"],
+	"import/no-extraneous-dependencies": "off",
+	"node/callback-return": "off",
+	"func-style": "off",
 	"simple-import-sort/imports": "off",
 	"unicorn/no-array-reduce": "off",
 	"canonical/sort-keys": "off",
@@ -12,6 +15,7 @@ const commonIgnoredRules = {
 	"canonical/filename-match-exported": "off",
 	"canonical/filename-match-regex": "off",
 	"canonical/id-match": "off",
+	"canonical/export-specifier-newline": "off",
 	"zod/require-strict": "off",
 };
 
