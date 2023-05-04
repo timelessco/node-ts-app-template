@@ -73,7 +73,7 @@ pnpm dev
 This will watch the `src` directory for changes and recompile the project on
 every change using `nodemon`.
 
-You can start editing the page by modifying `src/index.ts`.
+You can start editing the page by modifying `src/server.ts`.
 
 ## Building the project
 
