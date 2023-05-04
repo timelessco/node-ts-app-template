@@ -1,5 +1,15 @@
 
 
+## [2.0.2](https://github.com/timelessco/node-ts-app/compare/v2.0.1...v2.0.2) (2023-05-04)
+
+
+### 🗃️ Commits
+
+
+#### 🔨 Maintenance Updates
+
+- **`writerOptions:`** 🧹 Rearrange commit group order [e1bce88](https://github.com/timelessco/node-ts-app/commit/e1bce882297bf51928a9aafc6ca67801edfe0408) by @navin-moorthy
+
 ## [2.0.1](https://github.com/timelessco/node-ts-app/compare/v2.0.0...v2.0.1) (2023-05-04)
 
 
