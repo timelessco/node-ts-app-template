@@ -2,7 +2,6 @@ import { config } from "dotenv";
 
 /**
  * Loads environment variables from a .env file.
- *
  * @function
  * @returns {void}
  */

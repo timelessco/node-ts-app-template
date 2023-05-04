@@ -2,7 +2,6 @@ import { cleanEnv, str } from "envalid";
 
 /**
  * Validates the environment variables needed for the application to run.
- *
  * @function
  * @returns {void}
  */

@@ -76,7 +76,6 @@ const commitUrlFormat = expandTemplate(
 
 /**
  * Generates a URL for a commit hash based on the provided context.
- *
  * @param {object} context - The context object containing host, owner, and repository information.
  * @param {string} commitHash - The commit hash for which to generate the URL.
  * @returns {string} The URL for the specified commit hash.
@@ -87,7 +86,6 @@ function generateCommitUrl(context, commitHash) {
 
 /**
  * Returns the title-cased scope of a commit, if it exists.
- *
  * @param {object} commit - The commit object to extract the scope from.
  * @returns {string|null} The title-cased scope of the commit, or null if it does not exist.
  */
