@@ -110,11 +110,10 @@ is up to date with `main` and merge it for you.
 
 #### Post-Merge Recognition
 
-Once your PR is merged, if you haven't yet been added to the
-[_Contributors_ table in the README.md](../README.md#contributors) for its [type
-of contribution][12], you should be soon. Please do ping the maintainer who
-merged your PR if that doesn't happen within 24 hours - it was likely an
-oversight on our end!
+Once your PR is merged, if you haven't yet been added to the [_Contributors_
+table in the README.md][11] for its [type of contribution][12], you should be
+soon. Please do ping the maintainer who merged your PR if that doesn't happen
+within 24 hours - it was likely an oversight on our end!
 
 [1]: ./DEVELOPMENT.md
 [2]: ./CODE_OF_CONDUCT.md
@@ -131,6 +130,7 @@ oversight on our end!
 	https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/changing-the-stage-of-a-pull-request#converting-a-pull-request-to-a-draft
 [10]:
 	https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews#re-requesting-a-review
+[11]: ../README.md#contributors
 [12]: https://allcontributors.org/docs/en/emoji-key "Allcontributors emoji key"
 [13]:
 	https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/collaborating-on-repositories-with-code-quality-features/about-status-checks
