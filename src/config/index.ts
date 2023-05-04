@@ -10,8 +10,6 @@ export const loadEnvironmentVariables = (): void => {
 	config({ path: `.env.${process.env.NODE_ENV ?? "development"}` });
 };
 
-loadEnvironmentVariables();
-
 /**
  * The environment the application is running in.
  */
