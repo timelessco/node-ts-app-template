@@ -1,5 +1,100 @@
 
 
+## [2.0.1](https://github.com/timelessco/node-ts-app/compare/v2.0.0...v2.0.1) (2023-05-04)
+
+
+### 👀 Notable Changes
+
+
+
+#### `config` 
+
+- Remove loadEnvironmentVariables() function invocation from config/index.ts and move to server.ts
+- Ensure environment variables are loaded before validating them.
+
+
+Introduced in: [`e6955d1`](https://github.com/timelessco/node-ts-app/commit/e6955d1b95ba78e76617a7ae9e7c92fb532bfda3)
+
+
+
+
+
+### 🗃️ Commits
+
+
+#### 🐞 Bug Fixes
+
+- **`config:`** 🐛 move environment vars loading to server.ts [e6955d1](https://github.com/timelessco/node-ts-app/commit/e6955d1b95ba78e76617a7ae9e7c92fb532bfda3) by @navin-moorthy
+
+
+
+#### ♻️  Code Refactoring
+
+- **`env:`** ♻️ remove unused environment files and add dotenv configuration [2d2f2f0](https://github.com/timelessco/node-ts-app/commit/2d2f2f0faab7c56a4b11dcf77b8715dc68918bf1) by @navin-moorthy
+
+
+
+#### 🛠️ Build Updates
+
+- **`nvmrc:`** 🛠️ add .nvmrc file with LTS Node version [9fd338f](https://github.com/timelessco/node-ts-app/commit/9fd338f0ab72f7857c57ec2e7c1aaed5064c3be1) by @navin-moorthy
+
+- **`package.json:`** 🛠️ update build script with tsup-node [dcc1fb2](https://github.com/timelessco/node-ts-app/commit/dcc1fb2a3af1c4eefe14e0bd9866f134f2ab9585) by @navin-moorthy
+
+
+
+#### 📔 Documentation Changes
+
+- **`DEVELOPMENT.md:`** 📔 update instructions for starting development server [c574f95](https://github.com/timelessco/node-ts-app/commit/c574f951d99b684017f436d9b3b34e031ca7f9ab) by @navin-moorthy
+
+
+
+#### 🔨 Maintenance Updates
+
+- **`.eslintrc.cjs:`** 💄 update ESLint configuration [7a17cc4](https://github.com/timelessco/node-ts-app/commit/7a17cc4bf3399e773cd04de530785b3742f7661c) by @navin-moorthy
+
+- **`config:`** 🧹 add ignoreDependencies option  in knip and update tsconfig [61bc78d](https://github.com/timelessco/node-ts-app/commit/61bc78da1104a2a26a4ae6b4d2bfe0a702ea45fe) by @navin-moorthy
+
+- **`cspell:`** 🧹 enable useGitignore in cspell.json [81543f4](https://github.com/timelessco/node-ts-app/commit/81543f4a09a1678423919ebd075319a09da2fd08) by @navin-moorthy
+
+- **`deps:`** 🧹 upgrade pnpm to version 8.4.0 [64191da](https://github.com/timelessco/node-ts-app/commit/64191da3afd0343f6a9b541881f4080d46c8104e) by @navin-moorthy
+
+- **`git-config:`** 🧹 correct spelling mistake in git configuration description [06f123f](https://github.com/timelessco/node-ts-app/commit/06f123feb58ac5a96ea348f1f2f4796d4fc2052f) by @navin-moorthy
+
+- **`linting:`** 🧹 update ignore files [9dba94e](https://github.com/timelessco/node-ts-app/commit/9dba94edf46bf5052b09a63a10b257ce3d329429) by @navin-moorthy
+
+- **`project-words:`** 🧹 add and update project-related words [c18380a](https://github.com/timelessco/node-ts-app/commit/c18380a6849de8336b22df65c278586b15f66fc8) by @navin-moorthy
+
+- **`release-it:`** 🧹 update release notes template [4c9d392](https://github.com/timelessco/node-ts-app/commit/4c9d392967e60c3e38bca574b0674ae6f945b2b4) by @navin-moorthy
+
+- **`vscode:`** 🛠️ add file associations and editor formatters for Dockerfile and Nginx files [810182a](https://github.com/timelessco/node-ts-app/commit/810182a5bffb3b091666a261fdd1544c198eb4b5) by @navin-moorthy
+
+
+
+### 📌 Other Notable Changes
+
+
+
+#### `DEVELOPMENT md` 
+
+- Change file path from `src/index.ts` to `src/server.ts` for starting development server
+
+
+Introduced in: [`c574f95`](https://github.com/timelessco/node-ts-app/commit/c574f951d99b684017f436d9b3b34e031ca7f9ab)
+
+
+
+
+#### `env` 
+
+- Add a new config/index.ts file for loading the environment variables from a .env file.
+- Add validateEnvironment variables function that validates the required environment variables.
+- Use validateEnvironment variables to ensure the required env variables are available at runtime.
+- Update index.ts to utilize the validate environment variables function.
+- Replace usage of consola library with console.log to output 1 + 2.
+
+
+Introduced in: [`2d2f2f0`](https://github.com/timelessco/node-ts-app/commit/2d2f2f0faab7c56a4b11dcf77b8715dc68918bf1)
+
 ## [2.0.0](https://github.com/timelessco/node-ts-app/compare/v1.0.0...v2.0.0) (2023-04-12)
 
 
