@@ -1,13 +1,15 @@
-import fs from "node:fs";
-import { createRequire } from "node:module";
+import { readFileSync, writeFileSync } from "node:fs";
 import { Octokit } from "@octokit/core";
 import dedent from "dedent";
+import { config } from "dotenv";
 import { execa } from "execa";
 import gitRemoteOriginUrl from "git-remote-origin-url";
 import gitUrlParse from "git-url-parse";
 
-const require = createRequire(import.meta.url);
-const packagejson = require("../package.json");
+const packagejson = JSON.parse(readFileSync("./package.json"));
+
+// see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
+config();
 
 const getOldestCommitSinceLastTag = async () => {
 	const gitCommandArgs = [
@@ -92,8 +94,7 @@ const getQueryString = (afterCursorString) =>
 		commitDate,
 	);
 
-	// eslint-disable-next-line node/no-sync
-	fs.writeFileSync(
+	writeFileSync(
 		"release-it/remote-commits.json",
 		JSON.stringify(remoteCommits),
 	);

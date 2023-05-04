@@ -4,7 +4,7 @@ const {
 	commitPartial,
 	transform,
 	commitGroupsSort,
-} = require("./release-it/conventionalChangelogWriterOptsTransform.cjs");
+} = require("./release-it/writerOptions.cjs");
 
 module.exports = {
 	hooks: {
@@ -15,6 +15,7 @@ module.exports = {
 	git: {
 		requireBranch: "main",
 		requireCommits: true,
+		requireCleanWorkingDir: false,
 		commitMessage: "🚀 Release v${version}",
 		commitArgs: ["--no-verify", "-S"],
 		tagArgs: ["-s"],

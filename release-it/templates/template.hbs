@@ -62,3 +62,26 @@ Introduced in: [`{{shortHash}}`]({{hashUrl}})
 {{/each}}
 
 {{/each}}
+
+{{~#if hasOtherNotableChanges}}
+
+### {{otherNotableChangesTitle}}
+
+
+{{#each otherNotableChanges}}
+
+{{#if scope}}#### `{{scope}}` {{/if}}
+
+{{#if body}}
+{{body}}
+{{~/if}}
+
+{{#raw}}{{/raw}}
+
+Introduced in: [`{{shortHash}}`]({{hashUrl}})
+
+{{#raw}}{{/raw}}
+
+{{/each}}
+
+{{/if}}
