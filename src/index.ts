@@ -1,5 +1,6 @@
-import { consola } from "consola";
+import { validateEnvironmentVariables } from "./config/validateEnvironment";
 
-await import("./env/environment");
+validateEnvironmentVariables();
 
-consola.log("add 1 + 2: ", 1 + 2);
+// eslint-disable-next-line no-console
+console.log("add 1 + 2: ", 1 + 2);

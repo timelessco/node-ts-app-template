@@ -27,9 +27,7 @@ other amazing technologies mentioned below to build a modern web application.
 
 - [typeScript](https://www.typescriptlang.org/)
 - [ts-node](https://github.com/TypeStrong/ts-node)
-- [zod](https://github.com/colinhacks/zod)
 - [dotenv-cli](https://github.com/entropitor/dotenv-cli)
-- [consola](https://github.com/unjs/consola)
 - [pnpm](https://pnpm.io/)
 - [eslint](https://eslint.org/)
 - [prettier](https://prettier.io/)

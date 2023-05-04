@@ -46,11 +46,10 @@ pairs in the following format:
 
 - **`NODE_ENV`** (required): The environment in which the project is running.
   This can be either `development` or `production`.
-- **`API_URL`** (optional): The URL of the API for the project.
 
-> Adding a new environmental variable requires a zod schema update in the
-> `src/env` folder and a new entry in the `schema.ts` file in the
-> `environmentSchema` variable.
+> Adding a new environmental variable requires aa addition in the
+> `src/config/validateEnvironment.ts` file and a new entry in the global type
+> `interface NodeJS.ProcessEnv`.
 
 ## Installing the dependencies
 
