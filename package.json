@@ -5,7 +5,7 @@
 	"description": "Node TS App Template",
 	"keywords": [
 		"ts",
-		"library",
+		"app",
 		"production",
 		"template",
 		"node"
@@ -25,12 +25,12 @@
 	},
 	"type": "module",
 	"scripts": {
-		"build": "npx turbo run build:node",
-		"build:node": "dotenv -e .env.production ts-node src/index.ts",
+		"build": "npx turbo run build:tsup",
+		"build:tsup": "tsup-node",
 		"commit": "gacp",
 		"contributors:add": "all-contributors add",
 		"contributors:generate": "all-contributors generate",
-		"dev": "dotenv -e .env.development nodemon src/index.ts",
+		"dev": "nodemon",
 		"format": "npx turbo run format:eslint format:md format:prettier",
 		"format:eslint": "eslint --cache --report-unused-disable-directives --color . --fix",
 		"format:md": "markdownlint --fix **/*.md \".github/**/*.md\"",
@@ -45,8 +45,10 @@
 		"lint:types": "tsc --noEmit",
 		"populate:dictionary": "del-cli project-words.txt && cspell --words-only --unique --gitignore --cache --dot \"**/*\" | sort --ignore-case >> project-words.txt",
 		"prepare": "husky install",
-		"release": "dotenv -e .env.releaseit node release-it/getCommitsSinceLastRelease.js && release-it --ci",
+		"release": "node release-it/getCommitsSinceLastRelease.js && release-it --ci",
 		"release:dryrun": "release-it --dry-run",
+		"start": "node dist/server.js",
+		"start:production": "dotenv -e .env.production node dist/server.js",
 		"test": "echo \"no test specified\" && exit 0"
 	},
 	"commitlint": {
@@ -114,6 +116,7 @@
 		"title-case": "3.0.3",
 		"toml-eslint-parser": "0.5.0",
 		"ts-node": "^10.9.1",
+		"tsup": "^6.7.0",
 		"turbo": "1.8.8",
 		"typescript": "5.0.4",
 		"yaml-eslint-parser": "1.2.0"

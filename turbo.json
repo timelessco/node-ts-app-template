@@ -1,7 +1,7 @@
 {
 	"$schema": "https://turbo.build/schema.json",
 	"pipeline": {
-		"build:node": {
+		"build.tsup": {
 			"dependsOn": ["lint:eslint", "lint:types"]
 		},
 		"test": {},
