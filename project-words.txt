@@ -6,9 +6,11 @@ fbca
 gacp
 ianvs
 infile
+jscoverage
 Knip
 knip
 Kolkata
+lcov
 micnncim
 Navin
 navin
@@ -16,9 +18,15 @@ njsproj
 noreply
 npmrc
 ntvs
+Nuxt
+nuxt
+pids
 releaseit
 sentryclirc
 syncer
 timelessco
 TSES
+tsup
 unpublish
+vuepress
+wscript
