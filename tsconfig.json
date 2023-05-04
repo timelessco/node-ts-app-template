@@ -26,6 +26,7 @@
 		"files": true,
 		"esm": true,
 		"experimentalSpecifierResolution": "node",
-		"compilerOptions": {}
+		"pretty": true,
+		"experimentalResolver": true
 	}
 }
