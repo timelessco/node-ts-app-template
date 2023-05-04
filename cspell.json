@@ -23,6 +23,7 @@
 			"addWords": true
 		}
 	],
+	"useGitignore": true,
 	"ignorePaths": [
 		".git",
 		".husky",
