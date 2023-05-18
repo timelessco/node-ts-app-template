@@ -13,7 +13,7 @@
 			"inputs": ["**/*.md", ".github/**/*.md"]
 		},
 		"lint:knip": {
-			"inputs": ["src/pages/**/*.{js,jsx,ts,tsx}"]
+			"inputs": ["src/**/*.ts"]
 		},
 		"lint:package-json": {
 			"inputs": ["package.json"]
