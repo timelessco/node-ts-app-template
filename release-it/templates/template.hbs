@@ -7,7 +7,7 @@
 
 {{#each notes}}
 
-{{#if scope}}#### `{{scope}}` {{/if}}
+{{#if scope}}#### `{{scope}}`{{/if}}{{#if subject}}- {{subject}} {{/if}}
 
 {{#if body}}
 {{body}}
@@ -33,7 +33,7 @@ Introduced in: [`{{shortHash}}`]({{hashUrl}})
 
 {{#each notableChanges}}
 
-{{#if scope}}#### `{{scope}}` {{/if}}
+{{#if scope}}#### `{{scope}}`{{/if}}{{#if subject}}- {{subject}} {{/if}}
 
 {{#if body}}
 {{body}}
@@ -70,7 +70,7 @@ Introduced in: [`{{shortHash}}`]({{hashUrl}})
 
 {{#each otherNotableChanges}}
 
-{{#if scope}}#### `{{scope}}` {{/if}}
+{{#if scope}}#### `{{scope}}`{{/if}}{{#if subject}}- {{subject}} {{/if}}
 
 {{#if body}}
 {{body}}

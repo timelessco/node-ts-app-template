@@ -1,4 +1,5 @@
 import { readFileSync, writeFileSync } from "node:fs";
+
 import { Octokit } from "@octokit/core";
 import dedent from "dedent";
 import { config } from "dotenv";

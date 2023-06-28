@@ -90,7 +90,7 @@ function generateCommitUrl(context, commitHash) {
  * @returns {string|null} The title-cased scope of the commit, or null if it does not exist.
  */
 function getTitleCasedScope(commit) {
-	const scope = commit?.scope?.replaceAll(".", " ")?.replaceAll("-", " ");
+	const scope = commit?.scope?.toUpperCase();
 	return scope ? scope : null;
 }
 
@@ -108,6 +108,7 @@ const addBangNotes = (commit, context) => {
 			text: null,
 			scope: getTitleCasedScope(commit),
 			body: commit?.body,
+			subject: commit?.subject,
 			header: noteText,
 			shortHash: commit.shortHash,
 			hashUrl: generateCommitUrl(context, commit.hash),
@@ -127,11 +128,10 @@ const addNotableChanges = (commit, context) => {
 		context.notableChanges.push({
 			scope: getTitleCasedScope(commit),
 			body: commit.body,
+			subject: commit?.subject,
 			shortHash: commit.shortHash,
 			hashUrl: generateCommitUrl(context, commit.hash),
 		});
-
-		commit.body = null;
 	}
 };
 
@@ -144,6 +144,7 @@ const addOtherNotableChanges = (commit, context) => {
 		context.otherNotableChanges.push({
 			scope: getTitleCasedScope(commit),
 			body: commit.body,
+			subject: commit?.subject,
 			shortHash: commit.shortHash,
 			hashUrl: generateCommitUrl(context, commit.hash),
 		});
