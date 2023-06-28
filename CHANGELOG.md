@@ -1,5 +1,97 @@
 
 
+## [3.0.0](https://github.com/timelessco/node-ts-app/compare/v2.0.2...v3.0.0) (2023-06-28)
+
+
+### 🧨 BREAKING CHANGE
+
+
+#### `APP`- ✨ add logger & zod for env 
+
+- ✨ add logger & zod for env
+
+
+Introduced in: [`23bd5e8`](https://github.com/timelessco/node-ts-app/commit/23bd5e885b35725d7eda1947a6bd9b80691b231a)
+
+
+
+
+### 🗃️ Commits
+
+
+#### ⭐ New Features
+
+- **`app:`** ✨ add logger & zod for env [23bd5e8](https://github.com/timelessco/node-ts-app/commit/23bd5e885b35725d7eda1947a6bd9b80691b231a) by @navin-moorthy
+
+
+
+#### ♻️  Code Refactoring
+
+- **`release-it:`** ♻️ refactor commit message formatting [542eb98](https://github.com/timelessco/node-ts-app/commit/542eb98f7f6a80b8adc705038cf0163c6a3a5abe) by @navin-moorthy
+
+
+
+#### 📔 Documentation Changes
+
+- **`contributing:`** 📝 update CONTRIBUTING.md [da65ce1](https://github.com/timelessco/node-ts-app/commit/da65ce18d38254edae6da637569e945f09fb9750) by @navin-moorthy
+
+- **`contributing:`** 📝 update CONTRIBUTING.md formatting [b6cac48](https://github.com/timelessco/node-ts-app/commit/b6cac4811e8dbeca8ce8473b96318ed831e72130) by @navin-moorthy
+
+
+
+#### 🔨 Maintenance Updates
+
+- **`deps:`** 🔼 update devDependencies [230fa0c](https://github.com/timelessco/node-ts-app/commit/230fa0c4ce0f2194379dd11bd5128d576dcfa3c4) by @navin-moorthy
+
+- **`deps:`** 🧹   remove envalid dependency [db18d6d](https://github.com/timelessco/node-ts-app/commit/db18d6dc4e913bc6124bb9b858ac0bf384e0e4ff) by @navin-moorthy
+
+- **`deps:`** 🧹 remove title-case package from package.json [1bacc49](https://github.com/timelessco/node-ts-app/commit/1bacc49a82135c5f91076bad051d0a88fd5fb682) by @navin-moorthy
+
+- **`deps:`** 🧹 update dependencies [d57fb8e](https://github.com/timelessco/node-ts-app/commit/d57fb8e708da51acda9402aa73cee122a213bd98) by @navin-moorthy
+
+- **`deps:`** 🧹 update dev dependencies [6ddc470](https://github.com/timelessco/node-ts-app/commit/6ddc4701320c5a0955808eb2b276e9487847d24a) by @navin-moorthy
+
+- **`lint:`** 🧹 update source files extensions [cd19b1f](https://github.com/timelessco/node-ts-app/commit/cd19b1f0a6e2d13911e7238c96f717ee92665d37) by @navin-moorthy
+
+
+
+### 📌 Other Notable Changes
+
+
+
+#### `RELEASE-IT`- ♻️ refactor commit message formatting 
+
+-   Update getTitleCasedScope function to convert commit scope to uppercase
+-   Add missing subject field to note objects in addBangNotes and addNotableChanges functions
+-   Remove null assignment to commit.body in addNotableChanges function
+
+
+Introduced in: [`542eb98`](https://github.com/timelessco/node-ts-app/commit/542eb98f7f6a80b8adc705038cf0163c6a3a5abe)
+
+
+
+
+#### `CONTRIBUTING`- 📝 update CONTRIBUTING.md formatting 
+
+- Organize the Table of Contents for better readability.
+- Update link to Contributor table in the README.md.
+
+
+Introduced in: [`b6cac48`](https://github.com/timelessco/node-ts-app/commit/b6cac4811e8dbeca8ce8473b96318ed831e72130)
+
+
+
+
+#### `CONTRIBUTING`- 📝 update CONTRIBUTING.md 
+
+- Add a section on Granular PRs to Sending Contributions
+- Add additional context and guidelines to Pull Request Reviews.
+- Clarify the process for addressing requested changes in PRs
+- Update contributor recognition process to reflect current practices
+
+
+Introduced in: [`da65ce1`](https://github.com/timelessco/node-ts-app/commit/da65ce18d38254edae6da637569e945f09fb9750)
+
 ## [2.0.2](https://github.com/timelessco/node-ts-app/compare/v2.0.1...v2.0.2) (2023-05-04)
 
 
