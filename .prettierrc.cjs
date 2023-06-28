@@ -8,9 +8,12 @@ module.exports = {
 	pluginSearchDirs: false,
 	// @ianvs/prettier-plugin-sort-imports
 	importOrder: [
+		// A gap at the top after top-of-file-comments.
+		"",
 		// Packages.
-		// Things that start with a letter (or digit or underscore), or `@` followed by a letter.
-		"^@?\\w",
+		"<BUILTIN_MODULES>",
+		"",
+		"<THIRD_PARTY_MODULES>",
 		"",
 		// Anything that does not start with two dots ../
 		"^../",
@@ -21,12 +24,12 @@ module.exports = {
 		// Style imports.
 		"^.+\\.s?css$",
 	],
-	importOrderSortSpecifiers: true,
-	importOrderCaseInsensitive: true,
-	importOrderMergeDuplicateImports: true,
-	importOrderCombineTypeAndValueImports: true,
-	importOrderBuiltinModulesToTop: true,
-	importOrderParserPlugins: ["typescript", "jsx", "decorators-legacy"],
+	importOrderParserPlugins: [
+		"typescript",
+		"jsx",
+		"decorators-legacy",
+		"importAssertions",
+	],
 
 	// max 80 characters per line
 	// default
