@@ -1,15 +1,30 @@
 import { config } from "dotenv";
+import { z } from "zod";
+
+import { validateEnvironmentVariables } from "../utils/validateEnvironmentVariables.js";
+
+// eslint-disable-next-line node/no-process-env
+config({ path: `.env.${process.env.NODE_ENV ?? "development"}` });
 
 /**
- * Loads environment variables from a .env file.
- * @function
- * @returns {void}
+ * Schema for the environment variables.
+ * @typedef {object} EnvironmentVariablesSchema
+ * @property {string} NODE_ENV - The environment the application is running in.
+ * @property {string} LOG_FORMAT - The format of the logs.
+ * @property {string} LOG_DIR - The directory to store the logs in.
+ * @see https://env.t3.gg/docs/recipes
  */
-export const loadEnvironmentVariables = (): void => {
-	config({ path: `.env.${process.env.NODE_ENV ?? "development"}` });
+const environmentVariablesSchema = {
+	NODE_ENV: z
+		.enum(["development", "production", "staging"])
+		.optional()
+		.default("development"),
+	LOG_FORMAT: z.string().optional().default("combined"),
+	LOG_DIR: z.string().optional().default("./logs"),
 };
 
-/**
- * The environment the application is running in.
- */
-export const NODE_ENV = process.env.NODE_ENV;
+export const environment = validateEnvironmentVariables(
+	environmentVariablesSchema,
+);
+
+export const { NODE_ENV, LOG_FORMAT, LOG_DIR } = environment;

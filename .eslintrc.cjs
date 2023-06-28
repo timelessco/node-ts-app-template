@@ -30,7 +30,7 @@ const commonTypescriptIgnoredRules = {
 
 const commonNodeIgnoredRules = {
 	...commonIgnoredRules,
-	"node/no-process-env": "off",
+	"import/no-useless-path-segments": "off",
 };
 
 /**
@@ -56,13 +56,6 @@ module.exports = {
 			},
 			rules: {
 				...commonNodeIgnoredRules,
-				"import/extensions": [
-					"error",
-					"always",
-					{
-						ignorePackages: true,
-					},
-				],
 			},
 			overrides: [
 				{
@@ -72,7 +65,7 @@ module.exports = {
 			],
 		},
 		{
-			files: ["./*.ts", "src/**/*.ts"],
+			files: ["./*.ts", "scripts/**/*.ts", "src/**/*.ts"],
 			extends: [
 				"canonical",
 				"canonical/node",
