@@ -1,12 +1,11 @@
 amannn
 contributorsrc
-envalid
+ehthumbs
 execa
 fbca
 gacp
 ianvs
 infile
-jscoverage
 Knip
 knip
 Kolkata
@@ -14,6 +13,8 @@ lcov
 micnncim
 Navin
 navin
+nbproject
+netrc
 njsproj
 noreply
 npmrc
@@ -21,7 +22,6 @@ ntvs
 Nuxt
 nuxt
 pids
-releaseit
 sentryclirc
 syncer
 timelessco
