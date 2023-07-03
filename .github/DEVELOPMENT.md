@@ -207,3 +207,5 @@ push code ✨
 [13]: https://cspell.org
 [14]: https://npmpackagejsonlint.org/
 [15]: https://github.com/all-contributors/all-contributors
+
+<!-- TODO: Update ignore files & sync other constants from upstream -->
