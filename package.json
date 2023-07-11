@@ -1,6 +1,6 @@
 {
 	"name": "node-ts-app",
-	"version": "3.0.0",
+	"version": "3.0.1",
 	"private": true,
 	"description": "Node TS App Template",
 	"keywords": [

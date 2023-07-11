@@ -1,5 +1,43 @@
 
 
+## [3.0.1](https://github.com/timelessco/node-ts-app/compare/v3.0.0...v3.0.1) (2023-07-11)
+
+
+### 🗃️ Commits
+
+
+#### 🔨 Maintenance Updates
+
+- **`.*ignore:`** 🧹 update .ignore files [fa1549e](https://github.com/timelessco/node-ts-app/commit/fa1549e261af5d9109ceb6b7eeeee6971d73801c) by @navin-moorthy
+
+- **`deps:`** ⬆️ update consola to v3.2.3 ([#29](https://github.com/timelessco/node-ts-app/issues/29)) [b58ae01](https://github.com/timelessco/node-ts-app/commit/b58ae015551f3b2498c7f3200cab0fcbf89cb2d8) by @renovate[bot]
+
+- **`deps:`** 🧹 update dependencies [4554cbd](https://github.com/timelessco/node-ts-app/commit/4554cbdabefbbb4ce3890d267f4b564bfdb0e993) by @navin-moorthy
+
+- **`deps:`** 🧹 update library dependencies [2c188d7](https://github.com/timelessco/node-ts-app/commit/2c188d75dbba43edcc05b3e414cd6fad63c21aba) by @navin-moorthy
+
+- **`deps:`** lock file maintenance ([#23](https://github.com/timelessco/node-ts-app/issues/23)) [0b4a582](https://github.com/timelessco/node-ts-app/commit/0b4a58230a8554b27ac4da847883f31a9d4b9a8c) by @renovate[bot]
+
+- **`deps:`** pin zod to 3.21.4 ([#24](https://github.com/timelessco/node-ts-app/issues/24)) [8c78a95](https://github.com/timelessco/node-ts-app/commit/8c78a95c629eea401b590277b831545c918fdfb9) by @renovate[bot]
+
+- **`dev-deps:`** ⬆️ update devdependencies ([#30](https://github.com/timelessco/node-ts-app/issues/30)) [dfccc08](https://github.com/timelessco/node-ts-app/commit/dfccc08ae8e287bfc3941b4b4da7523a3b61afcf) by @renovate[bot]
+
+- **`dev-deps:`** ⬆️ upgrade devdependencies (major) to v6 (major) ([#25](https://github.com/timelessco/node-ts-app/issues/25)) [c312b22](https://github.com/timelessco/node-ts-app/commit/c312b223027e2438fa33525854faafd874c9ccc5) by @renovate[bot]
+
+- **`dev-deps:`** ⬆️ upgrade npm-package-json-lint to v7 ([#26](https://github.com/timelessco/node-ts-app/issues/26)) [d625a64](https://github.com/timelessco/node-ts-app/commit/d625a64a378f2a6ca1c495518c64a247cb690180) by @renovate[bot]
+
+- **`dev-deps:`** ⬆️ upgrade prettier to v3 ([#27](https://github.com/timelessco/node-ts-app/issues/27)) [20e0229](https://github.com/timelessco/node-ts-app/commit/20e0229475550bd8072d653820cde71cc22db2fb) by @renovate[bot]
+
+- **`dev-deps:`** ⬆️ upgrade release-it to v16 ([#28](https://github.com/timelessco/node-ts-app/issues/28)) [f50abda](https://github.com/timelessco/node-ts-app/commit/f50abdad5262a716f659b4246f60dae17bd44320) by @renovate[bot]
+
+- **`npm:`** 🧹 update .npmrc with auto-install-peers flag [3e70aa2](https://github.com/timelessco/node-ts-app/commit/3e70aa2fb6882633cf03eb1c3271b9862e793725) by @navin-moorthy
+
+- **`package.json:`** 🧹 update packageManager to pnpm@8.6.6 [b63fdbf](https://github.com/timelessco/node-ts-app/commit/b63fdbf713650355e1e5da10b5da1e2155ff9d86) by @navin-moorthy
+
+- **`project-words:`** 🧹 update project-words.txt [3b4163f](https://github.com/timelessco/node-ts-app/commit/3b4163f49d837e02aec4aaebfb56d564fc74a94e) by @navin-moorthy
+
+- **`tsconfig:`** 🧹 update compiler options [eadb3da](https://github.com/timelessco/node-ts-app/commit/eadb3da2b4b142707bb12b29eb7e10062599bd40) by @navin-moorthy
+
 ## [3.0.0](https://github.com/timelessco/node-ts-app/compare/v2.0.2...v3.0.0) (2023-06-28)
 
 
