@@ -5,7 +5,6 @@ module.exports = {
 	// Plugins
 	plugins: [prettierPluginPackagejson, prettierPluginSortImports],
 
-	pluginSearchDirs: false,
 	// @ianvs/prettier-plugin-sort-imports
 	importOrder: [
 		// A gap at the top after top-of-file-comments.
@@ -60,7 +59,8 @@ module.exports = {
 	// jsxSingleQuote: false,
 
 	// no comma at the end
-	trailingComma: "all",
+	// default
+	// trailingComma: "all",
 
 	// spaces are required at the beginning and end of the braces
 	// default
