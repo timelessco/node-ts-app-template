@@ -1,5 +1,60 @@
 
 
+## [3.0.2](https://github.com/timelessco/node-ts-app/compare/v3.0.1...v3.0.2) (2023-07-12)
+
+
+### 🗃️ Commits
+
+
+#### ♻️  Code Refactoring
+
+- **`utils:`** ♻️ update ensureDirectoryAccess function [b67978e](https://github.com/timelessco/node-ts-app/commit/b67978ea5b08a4dba1b06bee2ae8d7d92687b08d) by @navin-moorthy
+
+
+
+#### 📔 Documentation Changes
+
+- **`ensureDirectoryAccess:`** 📝 update JSDoc for ensureDirectoryAccess [69ac9a5](https://github.com/timelessco/node-ts-app/commit/69ac9a5c49c693265df0d97264a4a8b5df4f6725) by @navin-moorthy
+
+
+
+#### 🔨 Maintenance Updates
+
+- **`deps:`** 🧹 update library versions in package.json [d3fcc35](https://github.com/timelessco/node-ts-app/commit/d3fcc35f58ac68bf61d81e0cb7efbda86534600b) by @navin-moorthy
+
+- **`deps:`** 🧹 update renovate.json [1c2fb68](https://github.com/timelessco/node-ts-app/commit/1c2fb6826bacfe802ed3e7baad588e8dee3e9db9) by @navin-moorthy
+
+- **`editorconfig:`** 🧹 update .editorconfig settings [c16cb06](https://github.com/timelessco/node-ts-app/commit/c16cb0633972db7106bbb42d9513bf4e42b60e96) by @navin-moorthy
+
+
+
+#### 🎨 Code Style Changes
+
+- **`prettier:`** 💄 update Prettier configuration [d03073b](https://github.com/timelessco/node-ts-app/commit/d03073b1d0669b9fa9ba1a9431d3dcb8f4de9afd) by @navin-moorthy
+
+
+
+### 📌 Other Notable Changes
+
+
+
+#### `UTILS`- ♻️ update ensureDirectoryAccess function 
+
+-    Add missing comma in function parameter
+
+
+Introduced in: [`b67978e`](https://github.com/timelessco/node-ts-app/commit/b67978ea5b08a4dba1b06bee2ae8d7d92687b08d)
+
+
+
+
+#### `ENSUREDIRECTORYACCESS`- 📝 update JSDoc for ensureDirectoryAccess 
+
+- Provide more accurate and detailed information about its purpose and behavior.
+
+
+Introduced in: [`69ac9a5`](https://github.com/timelessco/node-ts-app/commit/69ac9a5c49c693265df0d97264a4a8b5df4f6725)
+
 ## [3.0.1](https://github.com/timelessco/node-ts-app/compare/v3.0.0...v3.0.1) (2023-07-11)
 
 
