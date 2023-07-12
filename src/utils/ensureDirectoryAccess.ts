@@ -12,13 +12,13 @@ import { throwError } from "./throwError.js";
  * @throws {Error} If the directory does not exist or is not accessible.
  */
 export async function ensureDirectoryAccess(
-	directoryPath: string
+	directoryPath: string,
 ): Promise<void> {
 	try {
 		await fs.access(
 			directoryPath,
 			// eslint-disable-next-line no-bitwise
-			fsSync.constants.F_OK | fsSync.constants.W_OK | fsSync.constants.R_OK
+			fsSync.constants.F_OK | fsSync.constants.W_OK | fsSync.constants.R_OK,
 		);
 	} catch {
 		try {
@@ -27,7 +27,7 @@ export async function ensureDirectoryAccess(
 		} catch (error) {
 			throwError(
 				error,
-				`${directoryPath} does not exists / writable / readable in ensureDirectoryAccess function`
+				`${directoryPath} does not exists / writable / readable in ensureDirectoryAccess function`,
 			);
 		}
 	}
