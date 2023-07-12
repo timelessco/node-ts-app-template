@@ -99,5 +99,6 @@
 			"semanticCommitType": "ci",
 			"semanticCommitScope": "ci-deps"
 		}
-	]
+	],
+	"ignoreDeps": ["prettier"]
 }
