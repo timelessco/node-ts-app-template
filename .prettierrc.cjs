@@ -40,7 +40,7 @@ module.exports = {
 
 	// use spaces instead of indentations
 	// https://github.com/prettier/prettier/issues/7475
-	useTabs: true,
+	// useTabs: true,
 
 	// semicolon at the end of the line
 	// default
@@ -60,7 +60,7 @@ module.exports = {
 
 	// no comma at the end
 	// default
-	// trailingComma: "all",
+	trailingComma: "all",
 
 	// spaces are required at the beginning and end of the braces
 	// default
