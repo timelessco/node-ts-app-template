@@ -91,7 +91,7 @@
 		"@types/node": "20.4.6",
 		"@typescript-eslint/experimental-utils": "5.62.0",
 		"all-contributors-cli": "6.26.1",
-		"cspell": "6.31.2",
+		"cspell": "7.0.0",
 		"dedent": "1.5.1",
 		"del-cli": "5.0.0",
 		"dotenv-cli": "7.2.1",
