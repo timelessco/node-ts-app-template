@@ -124,7 +124,7 @@
 		"typescript": "5.2.2",
 		"yaml-eslint-parser": "1.2.2"
 	},
-	"packageManager": "pnpm@8.14.3",
+	"packageManager": "pnpm@8.15.1",
 	"gacp": {
 		"add": false,
 		"push": false,
