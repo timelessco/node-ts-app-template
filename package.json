@@ -83,10 +83,10 @@
 	},
 	"devDependencies": {
 		"@babel/plugin-syntax-import-assertions": "7.22.5",
-		"@commitlint/cli": "18.2.0",
-		"@commitlint/config-conventional": "18.1.0",
+		"@commitlint/cli": "19.0.3",
+		"@commitlint/config-conventional": "19.0.3",
 		"@ianvs/prettier-plugin-sort-imports": "4.1.0",
-		"@octokit/core": "5.0.1",
+		"@octokit/core": "6.0.1",
 		"@release-it/conventional-changelog": "8.0.1",
 		"@types/node": "20.8.2",
 		"@typescript-eslint/experimental-utils": "5.62.0",
