@@ -116,8 +116,8 @@ devDependencies:
     specifier: 8.0.0
     version: 8.0.0(typescript@5.2.2)
   npm-package-json-lint-config-default:
-    specifier: 6.0.0
-    version: 6.0.0(npm-package-json-lint@8.0.0)
+    specifier: 7.0.0
+    version: 7.0.0(npm-package-json-lint@8.0.0)
   prettier:
     specifier: 2.8.8
     version: 2.8.8
@@ -8188,11 +8188,11 @@ packages:
       validate-npm-package-name: 5.0.1
     dev: true
 
-  /npm-package-json-lint-config-default@6.0.0(npm-package-json-lint@8.0.0):
-    resolution: {integrity: sha512-Ek3EcbMEjvGSxEywxNF2tTHuzvtaUH48Z7sljmeSejANMSpE1ssIN0oOG/Tlpc+U/P7ElfsOySIjijjmEnvMGw==}
-    engines: {node: '>=16.0.0', npm: '>=8.0.0'}
+  /npm-package-json-lint-config-default@7.0.0(npm-package-json-lint@8.0.0):
+    resolution: {integrity: sha512-Fc8N037pq3yslJbi3cBjMIbj/rQb2MDOUUM5DuFyET/ZQVCAL1+0/AF52pJYgu4vMoLW6pKpNhcKHDq0Tg2L+g==}
+    engines: {node: '>=18.0.0', npm: '>=9.0.0'}
     peerDependencies:
-      npm-package-json-lint: ^7.0.0
+      npm-package-json-lint: ^7.1.0
     dependencies:
       npm-package-json-lint: 8.0.0(typescript@5.2.2)
     dev: true
