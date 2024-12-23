@@ -75,11 +75,11 @@
 		]
 	},
 	"dependencies": {
-		"consola": "3.2.3",
+		"consola": "3.3.0",
 		"dotenv": "16.4.7",
 		"winston": "3.17.0",
 		"winston-daily-rotate-file": "5.0.0",
-		"zod": "3.23.8"
+		"zod": "3.24.1"
 	},
 	"devDependencies": {
 		"@babel/plugin-syntax-import-assertions": "7.22.5",

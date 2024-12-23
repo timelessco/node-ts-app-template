@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   consola:
-    specifier: 3.2.3
-    version: 3.2.3
+    specifier: 3.3.0
+    version: 3.3.0
   dotenv:
     specifier: 16.4.7
     version: 16.4.7
@@ -18,8 +18,8 @@ dependencies:
     specifier: 5.0.0
     version: 5.0.0(winston@3.17.0)
   zod:
-    specifier: 3.23.8
-    version: 3.23.8
+    specifier: 3.24.1
+    version: 3.24.1
 
 devDependencies:
   '@babel/plugin-syntax-import-assertions':
@@ -3831,8 +3831,8 @@ packages:
       xdg-basedir: 5.1.0
     dev: true
 
-  /consola@3.2.3:
-    resolution: {integrity: sha512-I5qxpzLv+sJhTVEoLYNcTW+bThDCPsit0vLNKShZx6rLtpilNpmmeTPaeqJb9ZE9dV3DGaeby6Vuhrw38WjeyQ==}
+  /consola@3.3.0:
+    resolution: {integrity: sha512-kxltocVQCwQNFvw40dlVRYeAkAvtYjMFZYNlOcsF5wExPpGwPxMwgx4IfDJvBRPtBpnQwItd5WkTaR0ZwT/TmQ==}
     engines: {node: ^14.18.0 || >=16.10.0}
     dev: false
 
@@ -11144,6 +11144,6 @@ packages:
     resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
     dev: true
 
-  /zod@3.23.8:
-    resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==}
+  /zod@3.24.1:
+    resolution: {integrity: sha512-muH7gBL9sI1nciMZV67X5fTKKBLtwpZ5VBp1vsOQzj1MhrBZ4wlVCm3gedKZWLp0Oyel8sIGfeiz54Su+OVT+A==}
     dev: false
