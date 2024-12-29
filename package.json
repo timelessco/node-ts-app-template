@@ -75,7 +75,7 @@
 		]
 	},
 	"dependencies": {
-		"consola": "3.3.0",
+		"consola": "3.3.3",
 		"dotenv": "16.4.7",
 		"winston": "3.17.0",
 		"winston-daily-rotate-file": "5.0.0",
