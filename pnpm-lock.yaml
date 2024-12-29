@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   consola:
-    specifier: 3.3.0
-    version: 3.3.0
+    specifier: 3.3.3
+    version: 3.3.3
   dotenv:
     specifier: 16.4.7
     version: 16.4.7
@@ -3831,8 +3831,8 @@ packages:
       xdg-basedir: 5.1.0
     dev: true
 
-  /consola@3.3.0:
-    resolution: {integrity: sha512-kxltocVQCwQNFvw40dlVRYeAkAvtYjMFZYNlOcsF5wExPpGwPxMwgx4IfDJvBRPtBpnQwItd5WkTaR0ZwT/TmQ==}
+  /consola@3.3.3:
+    resolution: {integrity: sha512-Qil5KwghMzlqd51UXM0b6fyaGHtOC22scxrwrz4A2882LyUMwQjnvaedN1HAeXzphspQ6CpHkzMAWxBTUruDLg==}
     engines: {node: ^14.18.0 || >=16.10.0}
     dev: false
 
