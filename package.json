@@ -96,7 +96,7 @@
 		"del-cli": "6.0.0",
 		"dotenv-cli": "8.0.0",
 		"eslint": "8.50.0",
-		"eslint-config-canonical": "41.3.0",
+		"eslint-config-canonical": "47.4.2",
 		"eslint-config-prettier": "10.0.1",
 		"eslint-plugin-jsonc": "2.9.0",
 		"eslint-plugin-toml": "0.5.0",
